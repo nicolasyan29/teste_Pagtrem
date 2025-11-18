@@ -7,6 +7,8 @@
 </head>
 <body>
     <div class="container" onclick="iniciarApp()">
+        <div class="icon">
+
         </div>
         <h1>PagTrem</h1>
         <h2>Funcionários</h2>
