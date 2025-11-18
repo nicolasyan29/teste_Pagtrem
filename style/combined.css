@@ -104,3 +104,71 @@ button:hover {
     background-color: #0d1b2a;
     color: #ffffff;
 }
+
+/*tela cadastro_1 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d1b2a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cadastro-container {
+    background-color: #0d1b2a;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+.arrow-button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+    background-color: #ffffff;
+    color: #ffffff;
+}
