@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>PagTrem Funcionários</title>
-    <link rel="stylesheet" href="../style/combined.css/">
+    <link rel="stylesheet" href="../style/combined.css">
 </head>
 <body>
     <div class="container" onclick="iniciarApp()">
-        <div class="icon">
-            🚆
         </div>
         <h1>PagTrem</h1>
         <h2>Funcionários</h2>
