@@ -7,3 +7,4 @@ if ($id) {
     $stmt->execute([':id'=>$id]);
 }
 header('Location: trens.php'); exit;
+
