@@ -1,0 +1,21 @@
+# Projeto Ferrovia - Instalação rápida
+
+## Passos para rodar localmente
+1. Copie a pasta `projeto-ferrovia` para o diretório público do seu servidor (ex.: `htdocs` no XAMPP).
+2. Importe `banco_combinado.sql` no MySQL (phpMyAdmin ou CLI).
+3. Ajuste `config/db.php` com seu usuário/senha do MySQL.
+4. Abra `public/login.php` e use:
+   - usuário: `admin`
+   - senha: `admin123`
+   Troque a senha do admin imediatamente.
+5. Acesse `public/index.php`.
+
+## Observações de segurança
+- Em produção habilite HTTPS.
+- Proteja `config/db.php` do acesso público.
+- Adicione CSRF tokens, validação server-side mais robusta, logs e controle de permissões.
+- Remova dados de teste antes de publicar.
+
+## Sobre o ViaCEP
+- O formulário usa ViaCEP no frontend (`assets/cep.js`) e há validação no backend (`lib/cep_lookup.php`).
+- Caso prefira não validar no backend, ajuste os arquivos `novo_funcionario.php` e `editar_funcionario.php`.
