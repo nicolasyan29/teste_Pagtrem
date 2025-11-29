@@ -1,7 +1,0 @@
-
-CREATE TABLE funcionarios (
- id INT AUTO_INCREMENT PRIMARY KEY,
- nome VARCHAR(100),
- usuario VARCHAR(50),
- senha VARCHAR(255)
-);
