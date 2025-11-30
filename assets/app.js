@@ -1,14 +1,14 @@
-// assets/app.js - UI helpers (search + simple notifications)
+// assets/app.js - small helpers
 document.addEventListener('DOMContentLoaded', function(){
-  const search = document.getElementById('searchInput');
-  if (search){
+  const s = document.getElementById('searchInput');
+  if (s) {
     let t;
-    search.addEventListener('input', function(){
+    s.addEventListener('input', ()=> {
       clearTimeout(t);
       t = setTimeout(()=> {
-        const q = encodeURIComponent(search.value.trim());
+        const q = encodeURIComponent(s.value.trim());
         location.href = `index.php?q=${q}`;
-      }, 350);
+      }, 300);
     });
   }
 });

@@ -3,7 +3,8 @@ require_once __DIR__ . '/../config/db.php';
 if (empty($_SESSION['user_id'])) header('Location: login.php');
 $id = intval($_GET['id'] ?? 0);
 if ($id) {
-    $stmt = $pdo->prepare('DELETE FROM funcionarios WHERE id = :id');
-    $stmt->execute([':id'=>$id]);
+    $st = mysqli_prepare($conn, "DELETE FROM funcionarios WHERE id = ?");
+    mysqli_stmt_bind_param($st,"i",$id);
+    mysqli_stmt_execute($st);
 }
-header('Location: index.php'); exit;
+header('Location: funcionarios.php'); exit;
