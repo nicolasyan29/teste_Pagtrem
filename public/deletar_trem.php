@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../config/db.php';
+require_once __DIR__ . '/../public/db.php';
 if (empty($_SESSION['user_id'])) header('Location: login.php');
 $id=intval($_GET['id']??0);
 if($id){ $st=mysqli_prepare($conn,"DELETE FROM trens WHERE id=?"); mysqli_stmt_bind_param($st,"i",$id); mysqli_stmt_execute($st); }

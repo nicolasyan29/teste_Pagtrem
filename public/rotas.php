@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../config/db.php';
+require_once __DIR__ . '/../public/db.php';
 if (empty($_SESSION['user_id'])) header('Location: login.php');
 $res = mysqli_query($conn, "SELECT * FROM rotas ORDER BY id DESC");
 $rotas = mysqli_fetch_all($res, MYSQLI_ASSOC);

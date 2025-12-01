@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../config/db.php';
+require_once __DIR__ . '/../public/db.php';
 if (empty($_SESSION['user_id'])) header('Location: login.php');
 $id=intval($_GET['id']??0); if(!$id) header('Location: rotas.php');
 $st=mysqli_prepare($conn,"SELECT * FROM rotas WHERE id=?"); mysqli_stmt_bind_param($st,"i",$id); mysqli_stmt_execute($st); $res=mysqli_stmt_get_result($st); $r=mysqli_fetch_assoc($res);
